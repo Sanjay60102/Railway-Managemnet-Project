@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Management</title>
+    <style>
+        .ctn {
+            padding: 10px 12px;
+            background-color: rgb(72, 107, 119);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            margin-left: 20px;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .ctn:hover,
+        .ctn:hover.ctn a {
+            color: rgb(72, 107, 119);
+            background-color: white;
+        }
+
+        /* Reset some default styles for the body and header */
+        body,
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(231, 251, 255, 0.888);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            /* Adjust the header content alignment */
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+            color: rgb(72, 107, 119);
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+
+        .news-card {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 0 0 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, background-color 0.2s;
+            width: calc(33.33% - 20px);
+            overflow: hidden;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(98, 139, 153, 0.639);
+        }
+
+        .news-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-card h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .news-card p {
+            color: #666;
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="nav-item ctn">Back</a>
+        <h1>Hotels</h1>
+    </header>
+    <main>
+        <section class="news-container">
+            <article class="news-card">
+                <img src="hotel1.jpg" alt="High-Speed Rail">
+                <div class="news-content">
+                    <h2>Dash Hotels - Affordable Luxury</h2>
+                    <p>
+                        Hotel in Hyderabad (1.3 km from Hyderabad Railway Station) Located in Hyderabad.
+                        <button type="button" style="border: none; background-color: rgb(72, 107, 119); color: white; border-radius: 5px;
+                        padding: 5px 6px; margin-left: 20px; margin-top: 2px;">Check Availability</button>
+                    </p>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="hotel2.jpg" alt="High-Speed Rail">
+                <div class="news-content">
+                    <h2>Hotel Stay Well Dx</h2>
+                    <p>Hotel in Paharganj, New Delhi (0.5 km from New Delhi Train Station)
+                        <button type="button" style="border: none; background-color: rgb(72, 107, 119); color: white; border-radius: 5px;
+                        padding: 5px 6px; margin-left: 20px; margin-top: 2px;">Check Availability</button>
+                    </p>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="hotel6.jpg" alt="High-Speed Rail">
+                <div class="news-content">
+                    <h2>Sweet Home</h2>
+                    <p>Hotel in Mumbai, Maharastra
+                        (0.3 km from Mumbai Central railway)
+                        <button type="button" style="border: none; background-color: rgb(72, 107, 119); color: white; border-radius: 5px;
+                        padding: 5px 6px; margin-left: 20px; margin-top: 2px;">Check Availability</button>
+                    </p>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="hotel4.jpg" alt="Station Facilities">
+                <div class="news-content">
+                    <h2>Vovo Premier hotel</h2>
+                    <p>Hotel in Gandhi nagar, Bangalore (0.8 km from SBC - Bangalore City Railway Station)
+                        <button type="button" style="border: none; background-color: rgb(72, 107, 119); color: white; border-radius: 5px;
+                        padding: 5px 6px; margin-left: 20px; margin-top: 2px;">Check Availability</button>
+                    </p>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="hotel5.jpg" alt="Station Facilities">
+                <div class="news-content">
+                    <h2>Greens Suite</h2>
+                    <p>hotel in Central Chennai, Chennai (0.6 km from Chennai Central Railway Station)
+                        <button type="button" style="border: none; background-color: rgb(72, 107, 119); color: white; border-radius: 5px;
+                        padding: 5px 6px; margin-left: 20px; margin-top: 2px;">Check Availability</button>
+                    </p>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="hotel3.jpeg" alt="Station Facilities">
+                <div class="news-content">
+                    <h2>Taj Nadesar Palace</h2>
+                    <p>Hotel in Varanasi (1.1 km from Varanasi Junction Railway Station) 
+                        <button type="button" style="border: none; background-color: rgb(72, 107, 119); color: white; border-radius: 5px;
+                        padding: 5px 6px; margin-left: 20px; margin-top: 2px;">Check Availability</button>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
